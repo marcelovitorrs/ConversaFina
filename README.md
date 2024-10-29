@@ -99,7 +99,7 @@ Make sure you have installed:
    ollama run tim2nearfield/finance
    ```
 
-   **Importante:** Abra o CMD, aguarde o download dos modelos e feche o terminal após o processo ser concluído.
+   **Important:** Open CMD, wait for the templates to download and close the terminal after the process is complete.
 
 7. Download the Firebase project configuration and copy it to `financial-advice-chat-backend\src\config`, the file must be named adminsdk.json, and can be found in the application console within [Firebase](https://console.firebase.google.com/u/1/project/financial-advice-chat/settings/general/web:Mjk1ODQ2M2ItZDg0MS00NWNlLWE2NjgtYjM3MDQ2YjY4MDdj?hl=pt-br)
 
