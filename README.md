@@ -169,7 +169,7 @@ Note: It is necessary that the frontend, backend and the Ollama server are runni
 - Henrique Leme de Brito - _Lead Developer_ - [GitHub](https://github.com/henrique-leme)
 - Marcelo Vitor Ribeiro Santos - _Secondary Developer_ - [GitHub]([https://github.com/marcelovitorrs])
 
-## 📄 Licença
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
