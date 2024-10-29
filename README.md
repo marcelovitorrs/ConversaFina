@@ -9,6 +9,12 @@ Chatbot aimed at financial education
    The project integrates modern technologies such as React, TypeScript, Vite, Express, Firebase, JWT, MongoDB and Ollama 
    to offer a robust and scalable solution.
 
+# Prototype
+   To build this product, a prototype was developed using the Figma tool, creating a simulation scenario for detecting 
+   profiles and also offering the user the option of asking the chatbot a question on the topic of financial education.
+   
+   *Link:* https://www.figma.com/proto/haNelNu0uFfbbatrxWy2ch/PrototipoFinal?node-id=431-39155&node-type=canvas&t=QTx8K7XSruE8Y8EM-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=431%3A39154
+
 # Features
 - **Frontend:**
   - User Interface for Financial Conversations
