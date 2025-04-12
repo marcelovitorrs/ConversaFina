@@ -16,12 +16,12 @@ Chatbot aimed at financial education
    *Link:* https://www.figma.com/proto/haNelNu0uFfbbatrxWy2ch/PrototipoFinal?node-id=431-39155&node-type=canvas&t=QTx8K7XSruE8Y8EM-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=431%3A39154
 
  # Demo Video    
-   To facilitate understanding and visualization of how the Conversa Fina tool works, short demonstration videos of the application have been made available:
-      1. User registration: Screen for registering new users in the application.
-      2. Registration validation: Screen for validating the new user's registration.
-      3. Profile assessment: Screen presenting the evaluation of the Financial Education Profile.
-      4. Query profile data: User Profile Data Screen.
-      5. Chat: Screen showing the user using the chat.
+   To facilitate understanding and visualization of how the Conversa Fina tool works, short demonstration videos of the application have been made available:< br/>
+      1. User registration: Screen for registering new users in the application.< br/>
+      2. Registration validation: Screen for validating the new user's registration.< br/>
+      3. Profile assessment: Screen presenting the evaluation of the Financial Education Profile.< br/>
+      4. Query profile data: User Profile Data Screen.< br/>
+      5. Chat: Screen showing the user using the chat.< br/>
                
 # Features
 - **Frontend:**
