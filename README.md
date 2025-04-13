@@ -17,11 +17,17 @@ Chatbot aimed at financial education
 
  # Demo Video    
    To facilitate understanding and visualization of how the Conversa Fina tool works, short demonstration videos of the application have been made available:
+   
       - 1. User registration: Screen for registering new users in the application.
+      
       - 2. Registration validation: Screen for validating the new user's registration.
+      
       - 3. Profile assessment: Screen presenting the evaluation of the Financial Education Profile.
+      
       - 4. Query profile data: User Profile Data Screen.
+      
       - 5. Chat: Screen showing the user using the chat.
+      
                
 # Features
 - **Frontend:**
