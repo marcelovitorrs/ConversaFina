@@ -19,15 +19,26 @@ Chatbot aimed at financial education
    To facilitate understanding and visualization of how the Conversa Fina tool works, short demonstration videos of the application have been made available:
    
       - 1. User registration: Screen for registering new users in the application.
-      
+   
+      https://github.com/user-attachments/assets/a9f60c1e-811b-4310-9a35-fbd6894e91c6
+
       - 2. Registration validation: Screen for validating the new user's registration.
       
+      https://github.com/user-attachments/assets/2e070c7a-935a-41a5-927e-0c9cf9ed3c5b
+
       - 3. Profile assessment: Screen presenting the evaluation of the Financial Education Profile.
       
+      https://github.com/user-attachments/assets/72b4c431-452c-4758-bdc5-afcb8fcbacfb
+
       - 4. Query profile data: User Profile Data Screen.
       
+      https://github.com/user-attachments/assets/1d59ea42-8dd2-41df-9d70-0576f9c7922d
+
       - 5. Chat: Screen showing the user using the chat.
       
+      https://github.com/user-attachments/assets/0795708e-df58-4800-810a-e142641be068
+
+
                
 # Features
 - **Frontend:**
