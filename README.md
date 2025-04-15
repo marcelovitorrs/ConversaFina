@@ -182,8 +182,36 @@ Make sure you have installed:
 
              JWT_SECRET=<< YOUR_JWT_SECRET_KEY >>
             DEEPL_API_KEY=<< YOUR_DEEPL_API_KEY >>
-                       
-6. Install Ollama templates:
+            
+6.  Step-by-step: How to fill the adminsdk.json file (Service Account Key)
+Access the Firebase Console:
+👉 https://console.firebase.google.com
+
+-  Select your project:
+-  Click on your project's name from the list of available projects.
+
+-  Go to project settings:
+-  Click the ⚙️ gear icon on the left sidebar (next to "Project Overview").
+
+-  Select "Project Settings":
+-  From the dropdown, choose "Project Settings".
+
+-  Open the "Service accounts" tab:
+-  At the top of the settings page, click on the "Service accounts" tab (last tab on the right).
+
+-  Click "Generate new private key":
+-  You will see a section titled "Firebase Admin SDK".
+-  Click the button “Generate new private key”.
+
+-  Confirm the prompt:
+-  A confirmation dialog will appear. Click Confirm.
+
+-  Done!
+-  Firebase will automatically generate the .json file and download it directly to your computer.                       
+
+-  Edit the adminsdk.json file and paste the generated code
+
+7. Install Ollama templates:
 
    Open a terminal and run:
 
@@ -194,7 +222,7 @@ Make sure you have installed:
 
    **Important:** Open CMD, wait for the templates to download and close the terminal after the process is complete.
 
-7. Download the Firebase project configuration and copy it to `financial-advice-chat-backend\src\config`, the file must be named adminsdk.json, and can be found in the application console within [Firebase](https://console.firebase.google.com/u/1/project/financial-advice-chat/settings/general/web:Mjk1ODQ2M2ItZDg0MS00NWNlLWE2NjgtYjM3MDQ2YjY4MDdj?hl=pt-br)
+8. Download the Firebase project configuration and copy it to `financial-advice-chat-backend\src\config`, the file must be named adminsdk.json, and can be found in the application console within [Firebase](https://console.firebase.google.com/u/1/project/financial-advice-chat/settings/general/web:Mjk1ODQ2M2ItZDg0MS00NWNlLWE2NjgtYjM3MDQ2YjY4MDdj?hl=pt-br)
 
 ## ⚙️ How to Run
 
