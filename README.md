@@ -121,71 +121,106 @@ Make sure you have installed:
      **Note:** On Windows, manually copy the `.env.example` file and rename it to `.env`.
       
 5.1. Edit the.env file:
+
 5.1.1. Create your project on Firebase: https://console.firebase.google.com/
          
          For the Frontend configuration:
+         
             Project folder: financial-advice-chat-frontend
       
 5.1.2. Go to your project settings in:
-            Project Settings → General → SDK setup and configuration → Choose npm
+
+Project Settings → General → SDK setup and configuration → Choose npm
          
-             REACT_APP_FIREBASE_API_KEY
-             Public API key used to authenticate Firebase requests.
-             Location: Firebase Console → Project Settings → General → Your Apps → SDK Configuration
+REACT_APP_FIREBASE_API_KEY
+
+Public API key used to authenticate Firebase requests.
+
+Location: Firebase Console → Project Settings → General → Your Apps → SDK Configuration
+
              REACT_APP_FIREBASE_API_KEY=<< FILL WITH YOUR WEB API KEY >>
 
-             REACT_APP_FIREBASE_AUTH_DOMAIN
-             Domain used for Firebase Authentication.
-             Common format: yourprojectname.firebaseapp.com
+REACT_APP_FIREBASE_AUTH_DOMAIN
+
+Domain used for Firebase Authentication.
+
+Common format: yourprojectname.firebaseapp.com
+
              REACT_APP_FIREBASE_AUTH_DOMAIN=<< PROJECTNAME >>.firebaseapp.com
 
-             REACT_APP_FIREBASE_DATABASE_URL
-             Realtime Database URL (if used).
-             Format: https://yourprojectname-default-rtdb.firebaseio.com
+ REACT_APP_FIREBASE_DATABASE_URL
+ 
+ Realtime Database URL (if used).
+ 
+ Format: https://yourprojectname-default-rtdb.firebaseio.com
+ 
              REACT_APP_FIREBASE_DATABASE_URL=<< DATABASE_URL >>
             
-             REACT_APP_FIREBASE_PROJECT_ID
-             Your Firebase Project ID.
-             Example: my-project-1234
+  REACT_APP_FIREBASE_PROJECT_ID
+  
+  Your Firebase Project ID.
+  
+  Example: my-project-1234
+  
              REACT_APP_FIREBASE_PROJECT_ID=<< PROJECT_ID >>
             
-             REACT_APP_FIREBASE_STORAGE_BUCKET
-             Storage bucket used by Firebase Storage.
-             Format: yourprojectname.appspot.com
+   REACT_APP_FIREBASE_STORAGE_BUCKET
+   
+   Storage bucket used by Firebase Storage.
+   
+   Format: yourprojectname.appspot.com
+   
              REACT_APP_FIREBASE_STORAGE_BUCKET=<< STORAGE_BUCKET >>
             
-             REACT_APP_FIREBASE_MESSAGING_SENDER_ID
-             Sender ID used by Firebase Cloud Messaging (FCM).
-             Example: 123456789012
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID
+   
+   Sender ID used by Firebase Cloud Messaging (FCM).
+   
+   Example: 123456789012
+   
              REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<< MESSAGING_SENDER_ID >>
             
-             REACT_APP_FIREBASE_APP_ID
-             Unique ID of your Firebase app.
-             Format: 1:123456789012:web:abcdefghij123456
+  REACT_APP_FIREBASE_APP_ID
+  
+  Unique ID of your Firebase app.
+  
+  Format: 1:123456789012:web:abcdefghij123456
+  
              REACT_APP_FIREBASE_APP_ID=<< APP_ID >>
             
-             REACT_APP_FIREBASE_MEASUREMENT_ID (optional)
-             Used for Google Analytics integration.
-             Format: G-XXXXXXX
+  REACT_APP_FIREBASE_MEASUREMENT_ID (optional)
+  
+  Used for Google Analytics integration.
+  
+  Format: G-XXXXXXX
+  
              REACT_APP_FIREBASE_MEASUREMENT_ID=<< MEASUREMENT_ID >>
             
-             REACT_APP_BACKEND_URL
+   REACT_APP_BACKEND_URL
+   
              REACT_APP_BACKEND_URL=http://localhost:5000
+   
+   PORT
+   
              PORT=80
 
-         For the Backend configuration:
+   For the Backend configuration:
+   
             Project folder: financial-advice-chat-backend
    
 5.1.3. Create a DeepL account:
-            Access the REST API: https://www.deepl.com/translator
-               Generate your DeepL API Key.
 
-             JWT_SECRET=<< YOUR_JWT_SECRET_KEY >>
+Access the REST API: https://www.deepl.com/translator
+
+Generate your DeepL API Key.
+
+            JWT_SECRET=<< YOUR_JWT_SECRET_KEY >>
             DEEPL_API_KEY=<< YOUR_DEEPL_API_KEY >>
             
 6.  Step-by-step: How to fill the adminsdk.json file (Service Account Key)
+   
 Access the Firebase Console:
-👉 https://console.firebase.google.com
+https://console.firebase.google.com
 
 -  Select your project:
 -  Click on your project's name from the list of available projects.
