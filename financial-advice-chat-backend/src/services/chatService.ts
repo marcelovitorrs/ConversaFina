@@ -15,7 +15,7 @@ export const processLlamaModel = async (question: string): Promise<string> => {
     return response.data.message.content.trim();
   } catch (error) {
     console.error("Erro ao chamar o LLM:", error);
-    throw new Error("Falha ao conectar ao serviço de LLM.");
+    throw new Error("Falha ao conectar ao serviço de LLM.");
   }
 };
 
@@ -36,7 +36,7 @@ export const processFinanceModel = async (
     return translatedResponse;
   } catch (error) {
     console.error("Erro ao chamar o modelo tim2nearfield/finance:", error);
-    throw new Error("Falha ao conectar ao serviço de LLM.");
+    throw new Error("Falha ao conectar ao serviço de LLM.");
   }
 };
 
@@ -50,11 +50,11 @@ export const addMessageToChat = async (
   let chat: Chat;
 
   if (!chatDoc.exists) {
-    console.log("Chat não encontrado, criando um novo chat para o usuário...");
+    console.log("Chat não encontrado, criando um novo chat para o usuário...");
 
     const user = await getUserById(userId);
     if (!user) {
-      throw new Error("Usuário não encontrado.");
+      throw new Error("Usuário não encontrado.");
     }
 
     chat = {
@@ -77,7 +77,7 @@ export const addMessageToChat = async (
       !chatData?.createdAt
     ) {
       throw new Error(
-        "Chat existente está incompleto. Verifique os campos obrigatórios."
+        "Chat existente está incompleto. Verifique os campos obrigatórios."
       );
     }
 
@@ -99,11 +99,18 @@ export const getChatByUserId = async (
   userId: string,
   limit: number,
   startAfter: string | null
-): Promise<{ messages: ChatMessage[]; nextPageToken: string | null }> => {
+): Promise<Chat> => {
   const chatDoc = await db.collection("chats").doc(userId).get();
 
   if (!chatDoc.exists) {
-    return { messages: [], nextPageToken: null };
+    return {
+      chatId: userId,
+      userId: userId,
+      profileType: "basic",
+      messages: [],
+      createdAt: new Date(),
+      updatedAt: new Date()
+    };
   }
 
   const chatData = chatDoc.data();
@@ -115,7 +122,7 @@ export const getChatByUserId = async (
     !chatData?.createdAt
   ) {
     throw new Error(
-      "Chat existente está incompleto. Verifique os campos obrigatórios."
+      "Chat existente está incompleto. Verifique os campos obrigatórios."
     );
   }
 
@@ -130,9 +137,7 @@ export const getChatByUserId = async (
       createdAtDate = new Date(msg.createdAt);
     } else if (
       (msg.createdAt as { _seconds?: number; _nanoseconds?: number })
-        ._seconds !== undefined &&
-      (msg.createdAt as { _seconds?: number; _nanoseconds?: number })
-        ._nanoseconds !== undefined
+        ._seconds !== undefined
     ) {
       const { _seconds, _nanoseconds } = msg.createdAt as unknown as {
         _seconds: number;
@@ -154,23 +159,17 @@ export const getChatByUserId = async (
       new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
   );
 
-  let paginatedMessages;
-  if (startAfter) {
-    const startIndex = sortedMessages.findIndex(
-      (msg: ChatMessage) => new Date(msg.createdAt).toISOString() === startAfter
-    );
-    paginatedMessages = sortedMessages.slice(
-      startIndex + 1,
-      startIndex + 1 + limit
-    );
-  } else {
-    paginatedMessages = sortedMessages.slice(0, limit);
-  }
-
-  const nextPageToken =
-    paginatedMessages.length === limit
-      ? paginatedMessages[paginatedMessages.length - 1].createdAt
-      : null;
-
-  return { messages: paginatedMessages, nextPageToken };
+  // Retorna o chat completo com todas as mensagens e campos obrigatórios
+  return {
+    chatId: chatData.chatId,
+    userId: chatData.userId,
+    profileType: chatData.profileType,
+    messages: sortedMessages,
+    createdAt: chatData.createdAt instanceof firebase.firestore.Timestamp
+      ? chatData.createdAt.toDate()
+      : new Date(chatData.createdAt),
+    updatedAt: chatData.updatedAt instanceof firebase.firestore.Timestamp
+      ? chatData.updatedAt.toDate()
+      : new Date(chatData.updatedAt)
+  };
 };
