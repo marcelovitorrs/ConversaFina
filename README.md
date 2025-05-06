@@ -89,7 +89,6 @@ Make sure you have installed:
 - Git
 - Node.js
 - npm
-- Hello
 - Ollama Models
 
 ### 🔧 Installation
