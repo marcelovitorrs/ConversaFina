@@ -207,8 +207,8 @@ Make sure you have installed:
    Open a terminal and run:
 
    ```sh
-   ollama run llama3.1
-   ollama run tim2nearfield/finance
+   ollama run llama3.2:1b
+   ollama run 0xroyce/Plutus-3B
    ```
 
    **Important:** Open CMD, wait for the templates to download and close the terminal after the process is complete.
