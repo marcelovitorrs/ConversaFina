@@ -7,7 +7,7 @@ import firebase from "firebase-admin";
 
 export const processLlamaModel = async (question: string): Promise<string> => {
   try {
-    const response = await axios.post("http://127.0.0.1:11434/api/chat", {
+    const response = await axios.post("https://conversafina.ddnsfree.com/ollama/api/chat", {
       model: "llama3.2:1b",
       messages: [{ role: "user", content: question }],
       stream: false,
@@ -23,7 +23,7 @@ export const processFinanceModel = async (
   question: string
 ): Promise<string> => {
   try {
-    const response = await axios.post("http://127.0.0.1:11434/api/chat", {
+    const response = await axios.post("https://conversafina.ddnsfree.com/ollama/api/chat", {
       model: "0xroyce/Plutus-3B",
       messages: [{ role: "user", content: question }],
       stream: false,

@@ -88,7 +88,7 @@ const ChatMessages: React.FC<ChatMessagesProps> = ({
           )}
         </>
       ) : (
-        <h2 className="text-2xl font-bold mb-6 text-center">Inicie aqui sua jornada na busca por<br /> esclarecimentos sobre o mundo das finanças.</h2>
+        <p className="text-center text-gray-500">Nenhuma conversa ainda.</p>
       )}
       <div ref={messagesEndRef} />
     </div>

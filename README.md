@@ -1,320 +1,218 @@
-# Project: ConversaFina
-Chatbot aimed at financial education
+# Financial Advice Chat
 
-# Description
-   ConversaFina is a comprehensive service designed to provide personalized financial advice through an interactive chat. 
-   The frontend offers a fluid and responsive user experience, while the backend ensures secure and efficient data 
-   management. 
-   
-   The project integrates modern technologies such as React, TypeScript, Vite, Express, Firebase, JWT, MongoDB and Ollama 
-   to offer a robust and scalable solution.
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=React&message=library&color=blue&style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/static/v1?label=TypeScript&message=language&color=blue&style=for-the-badge&logo=typescript"/>
+  <img src="https://img.shields.io/static/v1?label=Vite&message=build-tool&color=green&style=for-the-badge&logo=vite"/>
+  <img src="https://img.shields.io/static/v1?label=Express&message=framework&color=yellow&style=for-the-badge&logo=express"/>
+  <img src="https://img.shields.io/static/v1?label=Firebase&message=service&color=orange&style=for-the-badge&logo=firebase"/>
+  <img src="https://img.shields.io/static/v1?label=JWT&message=authentication&color=red&style=for-the-badge&logo=jsonwebtokens"/>
+  <img src="https://img.shields.io/static/v1?label=MongoDB&message=database&color=green&style=for-the-badge&logo=mongodb"/>
+  <img src="https://img.shields.io/static/v1?label=TailwindCSS&message=CSS%20framework&color=blue&style=for-the-badge&logo=tailwindcss"/>
+  <img src="https://img.shields.io/static/v1?label=GitHub&message=actions&color=grey&style=for-the-badge&logo=github"/>
+</p>
 
-# Prototype
-   To build this product, a prototype was developed using the Figma tool, creating a simulation scenario for detecting 
-   profiles and also offering the user the option of asking the chatbot a question on the topic of financial education.
-   
-   *Link:* https://www.figma.com/proto/haNelNu0uFfbbatrxWy2ch/PrototipoFinal?node-id=431-39155&node-type=canvas&t=QTx8K7XSruE8Y8EM-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=431%3A39154
+## Status do Projeto: ⚠️ Em Desenvolvimento
 
- # Demo Video    
-   To facilitate understanding and visualization of how the Conversa Fina tool works, short demonstration videos of the application have been made available:
-      1. User registration: Screen for registering new users in the application.
-      
-https://github.com/user-attachments/assets/dc2edeed-9992-4ecc-b452-a0781f3682b2
-     
-      2. Registration validation: Screen for validating the new user's registration.
-	 
-https://github.com/user-attachments/assets/b2156c1d-3813-42cb-baf2-75963b5154f2
-	
-      3. Profile assessment: Screen presenting the evaluation of the Financial Education Profile.
+### Descrição
 
- https://github.com/user-attachments/assets/baaed0c2-5e68-4c0b-84cf-50500389af5a
-	  
-      4. Query profile data: User Profile Data Screen.
+Financial Advice Chat é um serviço abrangente desenvolvido para fornecer aconselhamento financeiro personalizado através de um chat interativo. O frontend oferece uma experiência de usuário fluida e responsiva, enquanto o backend garante a gestão segura e eficiente dos dados. O projeto integra tecnologias modernas como React, TypeScript, Vite, Express, Firebase, JWT, MongoDB e Ollama para oferecer uma solução robusta e escalável.
 
- https://github.com/user-attachments/assets/7a27f2b0-0701-42b8-9200-1b06c891cf8a
-     
-      5. Chat: Screen showing the user using the chat.
+### ⚙️ Funcionalidades
 
-https://github.com/user-attachments/assets/041515c5-c62c-481f-abd8-9ce53be99d93
-
-
-
-   
-# Features
 - **Frontend:**
-  - User Interface for Financial Conversations
-  - Backend integration via REST API
-  - Responsive Design
-  - Interactive Components with TailwindCSS
-  - User authentication with Firebase
+
+  - Interface de Usuário para Conversas Financeiras
+  - Integração com Backend via API REST
+  - Design Responsivo
+  - Componentes Interativos com TailwindCSS
+  - Autenticação de Usuários com Firebase
 
 - **Backend:**
-  - User Authentication and Authorization with JWT
-  - Secure and Realtime Storage with Firestore
-  - RESTful API
-  - Integration with AI Models via Ollama
- 
-# Documentation
-  For detailed documentation, see [Documentation](#) (link will be added).
+  - Autenticação e Autorização de Usuários com JWT
+  - Armazenamento Seguro e Realtime com Firestore
+  - API RESTful
+  - Integração com Modelos de IA via Ollama
 
-To access documentation locally:
+### 📚 Documentação
 
-1. Clone the project.
-2. Follow the setup instructions below.
+Para uma documentação detalhada, consulte a [Documentação](#) (link será adicionado).
 
-3. ### 📝 Index
+Para acessar a documentação localmente:
 
-- [Starting](#starting)
-- [How to Run](#how-to-run)
-- [Development](#development)
-- [Authors](#authors)
+1. Clone o projeto.
+2. Siga as instruções de configuração abaixo.
 
-## 🚀 Starting
+### 📝 Índice
 
-Follow these instructions to get a copy of the project running on your local machine for development and testing purposes.
+- [Começando](#começando)
+- [Como Executar](#como-executar)
+- [Desenvolvimento](#desenvolvimento)
+- [Autores](#autores)
 
-### 📋 Prerequisites
+## 🚀 Começando
 
-Make sure you have installed:
+Siga estas instruções para obter uma cópia do projeto rodando na sua máquina local para fins de desenvolvimento e teste.
+
+### 📋 Pré-requisitos
+
+Certifique-se de ter instalado:
 
 - Git
 - Node.js
 - npm
-- Ollama Models
+- Ollama
+- Models do Ollama
 
-### 🔧 Installation
+### 🔧 Instalação
 
-1. Clone the repository:
+1. Clone o repositório:
 
    ```sh
-   git clone https://github.com/marcelovitorrs/ConversaFina.git
+   git clone https://github.com/henrique-leme/chatbank.git
    ```
 
-2. Navigate to the project folder:
+2. Navegue para a pasta do projeto:
 
    ```sh
-   cd ConversaFina
+   cd chatbank
    ```
 
-3. Install frontend dependencies:
+3. Instale as dependências do frontend:
 
    ```sh
-   cd ../financial-advice-chat-frontend
+   cd financial-advice-chat-front
    npm install
    ```
 
-4. Install backend dependencies
+4. Instale as dependências do backend:
 
    ```sh
    cd ../financial-advice-chat-backend
    npm install
    ```
 
-5. Configure the environment variables:
+5. Configure as variáveis de ambiente:
 
-   - Edit the '.env.example' file.
-	1) Create the project in Firebase at https://console.firebase.google.com/
-	
-	
-   - For Frontend configuration:
-	>>>>>> financial-advice-chat-frontend
-
-	2) Access the Project Settings at: Project Settings >> General ( firebaseConfig ) >> SDK setup and configuration >> Choise npm
-
-	🔹 REACT_APP_FIREBASE_API_KEY
-	Public API key used to authenticate Firebase requests.
-	🔍 Find it in: Firebase Console → Project Settings → General → Your apps → SDK Settings
-	```sh
-	REACT_APP_FIREBASE_API_KEY= << FILL IN WITH THE WEB API KEY OF YOUR CREATED PROJECT >>
-	```
-	
-	🔹 REACT_APP_FIREBASE_AUTH_DOMAIN
-	Domain used for authentication via Firebase Authentication.
-	Common format: projectname.firebaseapp.com
-	```sh
-	REACT_APP_FIREBASE_AUTH_DOMAIN= << PROJECTNAME >> {Project name}+".firebaseapp.com" Example: project.firebaseapp.com
-	```
-	🔹 REACT_APP_FIREBASE_DATABASE_URL
-	Realtime Database URL, if using.
-	Format: https://default-rtdb-projectname.firebaseio.com
-	```sh
-	REACT_APP_FIREBASE_DATABASE_URL= << databaseURL >>
-	```
-	
-	🔹 REACT_APP_FIREBASE_PROJECT_ID
-	Firebase project ID.
-	Example: my-project-1234
-	```sh
-	REACT_APP_FIREBASE_PROJECT_ID= <<projectId>>
-	```
-	
-	🔹 REACT_APP_FIREBASE_STORAGE_BUCKET
-	The name of the bucket used for storing files in Firebase Storage.
-	Format: projectname.appspot.com
-	```sh	
-	REACT_APP_FIREBASE_STORAGE_BUCKET= <<storageBucket>>
-	```
-	
-	🔹 REACT_APP_FIREBASE_MESSAGING_SENDER_ID
-	The sender identifier used for Firebase Cloud Messaging (FCM).
-	Example: 123456789012
-	```sh	
-	REACT_APP_FIREBASE_MESSAGING_SENDER_ID= <<messagingSenderId>>
-	```
-	
-	🔹 REACT_APP_FIREBASE_APP_ID
-	The unique ID of the Firebase application. Format: 1:123456789012:web:abcdefghij123456
-	```sh	
-	REACT_APP_FIREBASE_APP_ID= <<appId>>
-	```
-	
-	🔹 REACT_APP_FIREBASE_MEASUREMENT_ID
-	Used for integration with Google Analytics (optional).
-	Format: G-XXXXXXX
-	```sh
-	REACT_APP_FIREBASE_MEASUREMENT_ID= <<measurementId>>
-	```
-	
-	🔹 REACT_APP_BACKEND_URL
-	Backend (API) address of your application. REACT_APP_BACKEND_URL=http://localhost:5000
-	```sh
-	PORT=80
-	```
-	
-  - For Backend configuration:
-	>>>>>> financial-advice-chat-backend:
-
-	1) - Create an account on Deepl
-	// Access to DeepL REST API - DeepL API Free
-	// https://www.deepl.com/pt-BR/translator
-	// Generate the API key << DeepL API Key >>
-
-	```sh	
-	JWT_SECRET=<<your_jwt_secret_key>>
-	DEEPL_API_KEY= << DeepL API Key >>
-	```	
-
-   - Copy the `.env.example` file to `.env` in both `financial-advice-chat-frontend` and `financial-advice-chat-backend` folders.
+   - Copie o arquivo `.env.example` para `.env` em ambas as pastas `financial-advice-chat-front` e `financial-advice-chat-backend`.
 
      ```sh
      cp .env.example .env
      ```
 
-     **Note:** On Windows, manually copy the `.env.example` file and rename it to `.env`.
+     **Nota:** No Windows, copie manualmente o arquivo `.env.example` e renomeie para `.env`.
 
-6. Install Ollama templates:
+6. Instale os modelos do Ollama:
 
-   Open a terminal and run:
+   Abra um terminal e execute:
 
    ```sh
-   ollama run llama3.2:1b
-   ollama run 0xroyce/Plutus-3B:latest
+   ollama run llama3.1
+   ollama run tim2nearfield/finance
    ```
 
-   **Important:** Open CMD, wait for the templates to download and close the terminal after the process is complete.
+   **Importante:** Abra o CMD, aguarde o download dos modelos e feche o terminal após o processo ser concluído.
 
-7. Download the Firebase project configuration and copy it to `financial-advice-chat-backend\src\config`, the file must be named adminsdk.json, and can be found in the application console within [Firebase](https://console.firebase.google.com/u/1/project/financial-advice-chat/settings/general/web:Mjk1ODQ2M2ItZDg0MS00NWNlLWE2NjgtYjM3MDQ2YjY4MDdj?hl=pt-br)
+7. Baixe a configuração de projeto do Firebase e copie para `financial-advice-chat-backend\src\config`, o arquivo deve ter o nome de adminsdk.json, e pode ser encontrado no console da aplicação dentro do [Firebase](https://console.firebase.google.com/u/1/project/financial-advice-chat/settings/general/web:Mjk1ODQ2M2ItZDg0MS00NWNlLWE2NjgtYjM3MDQ2YjY4MDdj?hl=pt-br)
 
-## ⚙️ How to Run
+## ⚙️ Como Executar
 
-Open another terminal, navigate to financial-advice-chat-front and run:
+1. Inicie o servidor do Ollama:
 
-npm start
-Note: It is necessary that the frontend, backend and the Ollama server are running simultaneously for the project to function correctly.
-
-1. Start the Ollama server:
-   
    ```sh
    ollama serve
    ```
 
-2. Start the backend:
-   Open a terminal, navigate to `financial-advice-chat-backend` and run:
+2. Inicie o backend:
+
+   Abra um terminal, navegue para `financial-advice-chat-backend` e execute:
 
    ```sh
    npm run dev
    ```
 
-3. Start the frontend:
-   Open another terminal, navigate to 'financial-advice-chat-frontend' and run:
+3. Inicie o frontend:
+
+   Abra outro terminal, navegue para `financial-advice-chat-front` e execute:
 
    ```sh
    npm start
    ```
 
-**Note:** It is necessary that the frontend, backend and the Ollama server are running simultaneously for the project to function correctly.
+**Nota:** É necessário que o frontend, backend e o servidor Ollama estejam rodando simultaneamente para o funcionamento correto do projeto.
 
 ### 📦 Deploy
 
-- Deployment steps will be included in the future.
+- As etapas para deploy serão incluídas futuramente.
 
-## 🛠️ Built with
+## 🛠️ Construído com
 
 - **Frontend:**
-  
-  - [React](https://reactjs.org/) - Library for building user interfaces
-  - [TypeScript](https://www.typescriptlang.org/) - Programming language
-  - [Vite](https://vitejs.dev/) - Build tool
-  - [TailwindCSS](https://tailwindcss.com/) - CSS Framework
-  - [React Router](https://reactrouter.com/) - Route management
-  - [Axios](https://axios-http.com/) - HTTP Client
-  - [Firebase](https://firebase.google.com/) - Real-time authentication and services
-  - [Zod](https://zod.dev/) - Schema validation
+
+  - [React](https://reactjs.org/) - Biblioteca para construção de interfaces de usuário
+  - [TypeScript](https://www.typescriptlang.org/) - Linguagem de programação
+  - [Vite](https://vitejs.dev/) - Ferramenta de build
+  - [TailwindCSS](https://tailwindcss.com/) - Framework de CSS
+  - [React Router](https://reactrouter.com/) - Gerenciamento de rotas
+  - [Axios](https://axios-http.com/) - Cliente HTTP
+  - [Firebase](https://firebase.google.com/) - Autenticação e serviços em tempo real
+  - [Zod](https://zod.dev/) - Validação de esquemas
 
 - **Backend:**
 
-  - [Node.js](https://nodejs.org/) - Execution environment
-  - [Express](https://expressjs.com/) - Web Framework
-  - [TypeScript](https://www.typescriptlang.org/) - Programming language
-  - [Firebase Firestore](https://firebase.google.com/products/firestore) - Database
-  - [JWT](https://jwt.io/) - Authentication
-  - [Ollama](https://ollama.com/) - Integration with AI models
-  - [Cheerio](https://cheerio.js.org/) - Data Scraping
-  - [Puppeteer](https://pptr.dev/) - Browser automation
+  - [Node.js](https://nodejs.org/) - Ambiente de execução
+  - [Express](https://expressjs.com/) - Framework web
+  - [TypeScript](https://www.typescriptlang.org/) - Linguagem de programação
+  - [Firebase Firestore](https://firebase.google.com/products/firestore) - Banco de dados
+  - [JWT](https://jwt.io/) - Autenticação
+  - [Ollama](https://ollama.com/) - Integração com modelos de IA
+  - [Cheerio](https://cheerio.js.org/) - Scraping de dados
+  - [Puppeteer](https://pptr.dev/) - Automação de navegador
 
 - **DevOps:**
   - [Git](https://git-scm.com/) - Controle de versão
   - [GitHub Actions](https://github.com/features/actions) - CI/CD
 
-## ✒️ Authors
+## ✒️ Autores
 
-- Henrique Leme de Brito - _Lead Developer_ - [GitHub](https://github.com/henrique-leme)
-- Marcelo Vitor Ribeiro Santos - _Secondary Developer_ - [GitHub]([https://github.com/marcelovitorrs])
+- **Seu Nome** - _Desenvolvedor Principal_ - [GitHub](https://github.com/henrique-leme)
 
-## 📄 License
+Veja também a lista de [colaboradores](https://github.com/henrique-leme/financial-advice-chat/contributors) que participaram deste projeto.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 Licença
 
-## 🎯 Concepts and Architecture
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-- **Design Patterns:**
+## 🎯 Conceitos e Arquitetura
+
+- **Padrões de Design:**
 
   - **MVC (Model-View-Controller)**
 
-- **Architectural Concepts:**
+- **Conceitos de Arquitetura:**
 
-  - **Layered Architecture** (Presentation, Application/Backend, Data, Infrastructure)
-  - **Authentication and Authorization with JWT**
-  - **AI integration using Ollama**
-  - **Scraping to collect financial data**
-  - **Real-time Sync with Firebase Firestore**
+  - **Arquitetura em Camadas** (Apresentação, Aplicação/Backend, Dados, Infraestrutura)
+  - **Autenticação e Autorização com JWT**
+  - **Integração de IA usando Ollama**
+  - **Scraping para coleta de dados financeiros**
+  - **Sincronização em Tempo Real com Firebase Firestore**
 
-- **Data Flow and Interactions:**
-  - User authentication
-  - Collection and definition of financial profile
-  - Chat interaction with natural language processing (NLP)
-  - Storage and management of conversation history
-  - Real-time synchronization and updates
+- **Fluxo de Dados e Interações:**
+  - Autenticação de usuários
+  - Coleta e definição de perfil financeiro
+  - Interação no chat com processamento de linguagem natural (NLP)
+  - Armazenamento e gerenciamento de histórico de conversas
+  - Sincronização e atualizações em tempo real
 
-## 📌 Additional Notes
+## 📌 Notas Adicionais
 
-- **Hosting and Deployment:**
+- **Hospedagem e Deploy:**
 
   - [Firebase Hosting](https://firebase.google.com/products/hosting)
 
-- **Development Tools:**
-  - [Visual Studio Code](https://code.visualstudio.com/) with recommended extensions for TypeScript and React
+- **Ferramentas de Desenvolvimento:**
+  - [Visual Studio Code](https://code.visualstudio.com/) com extensões recomendadas para TypeScript e React
 
 ---
 
-**Note:** This project is under development and new features and documentation will be added as it progresses.
+**Nota:** Este projeto está em desenvolvimento e novas funcionalidades e documentações serão adicionadas conforme o progresso.
