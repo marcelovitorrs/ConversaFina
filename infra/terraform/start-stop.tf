@@ -65,7 +65,7 @@ data "archive_file" "lambda_code" {
 
 # Criação da função Lambda
 resource "aws_lambda_function" "start_stop_services" {
-  filename      = "lambda_function.zip"
+  filename      = data.archive_file.lambda_code.output_path
   function_name = "start-stop-services"
   handler       = "index.handler"
   runtime       = "nodejs22.x"
@@ -77,7 +77,7 @@ resource "aws_lambda_function" "start_stop_services" {
       EC2_INSTANCE_ID = var.aws_ec2_instance_id
     }
   }
-  source_code_hash = filebase64sha256("lambda_function.zip")
+  source_code_hash = data.archive_file.lambda_code.output_base64sha256
 }
 
 # Criação do API Gateway
