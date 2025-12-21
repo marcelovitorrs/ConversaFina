@@ -247,13 +247,13 @@ const Register = () => {
             )}
           </div>
 
-          {/* Renda */}
+          {/* Renda Faturamento Mensal */}
           <div>
             <label
               htmlFor="income"
               className="block text-sm font-medium text-gray-700"
             >
-              Renda
+              Faturamento Mensal
             </label>
             <input
               id="income"

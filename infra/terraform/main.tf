@@ -4,6 +4,10 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+    archive = {
+      source  = "hashicorp/archive"
+      version = "~> 2.0"
+    }
   }
 }
 
@@ -16,3 +20,6 @@ provider "aws" {
     }
   }
 }
+
+# Provider for creating local archives (data "archive_file")
+provider "archive" {}

@@ -24,4 +24,4 @@
 
 **/.env
 
-**/.terraform/providers/*
+**/.terraform/providers/*\n# Ignore terraform state files\ninfra/terraform/*.tfstate*\n# Ignore Google admin SDK service account\nfinancial-advice-chat-backend/**/adminsdk.json

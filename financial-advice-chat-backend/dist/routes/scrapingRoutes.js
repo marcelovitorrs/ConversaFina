@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const scrapingController_1 = require("../controllers/scrapingController");
+const router = (0, express_1.Router)();
+router.get("/dividendos", scrapingController_1.runAndSaveDividendos);
+router.get("/fundos-investimento", scrapingController_1.runAndSaveFundosDeInvestimento);
+router.get("/fundos-imobiliarios", scrapingController_1.runAndSaveFundosImobiliarios);
+router.get("/renda-fixa", scrapingController_1.runAndSaveRendaFixa);
+router.get("/guias", scrapingController_1.runAndSaveGuias);
+router.get("/list/:collection", scrapingController_1.listScrapedData);
+exports.default = router;
